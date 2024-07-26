@@ -5,8 +5,17 @@ import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import DownloadButton from "@/components/DownlaodButton";
 
 const Home = () => {
+  const downloadFileAtURL = (url) => {
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", "");
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -24,14 +33,7 @@ const Home = () => {
             </p>
             {/* btn and social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <DownloadButton />
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
