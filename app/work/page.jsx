@@ -21,45 +21,46 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "Data Analytics",
+    title: "Sales Report Dasboard Kimia Farma​",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem facere unde perferendis illo aliquid.",
+      "Pengalaman Magang Virtual Big Data Analytics di Kimia Farma yang difasilitasi oleh Rakamin Academy. Dalam program ini, sebagai Intern Analis Big Data dari Kimia Farma, saya belajar tentang data warehouse, data lake, dan data mart. Saya juga mengasah keterampilan saya dalam SQL dan cara memvisualisasikan data yang baik. Di akhir proyek, saya diminta untuk membuat tabel analisa dari dengan BigQuery membangun dashboard penjualan menggunakan Looker Studio dengan dataset kasus nyata dari Kimia Farma",
     stack: [
       {
-        name: "Html 5",
+        name: "SQL",
       },
       {
-        name: "Css 3",
+        name: "BigQuery",
       },
       {
-        name: "Javascript",
+        name: "Looker Studio",
       },
     ],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    image: "/assets/work/dashboard.png",
+    live: "https://lookerstudio.google.com/reporting/58feb65d-29de-4c33-9c7d-7df3ced5b5e9",
+    github: "https://github.com/Ayyasy123/rakamin-kf-big-data-analylitcs",
   },
   {
     num: "02",
-    category: "frontend",
-    title: "project 2",
+    category: "Web Development",
+    title: "EMIS API Management",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem facere unde perferendis illo aliquid.",
+      "EMIS (Education Management Information System) API Management adalah sistem yang dirancang untuk mengelola dan mengatur data pendidikan yang digunakan oleh Kementrian Agama. Sistem ini memungkinkan pengumpulan, pengolahan, dan distribusi data pendidikan secara efisien dan terintegrasi melalui API (Application Programming Interface).",
     stack: [
       {
-        name: "Next.js",
+        name: "Laravel",
       },
       {
-        name: "Tailwind.css",
+        name: "React.js",
       },
       {
-        name: "Node.js",
+        name: "SQL",
       },
     ],
     image: "/assets/work/thumb2.png",
-    live: "",
+    live: "https://emis.kemenag.go.id/",
     github: "",
+    // caption: "* Project tidak memiliki link maupun github, bisa dilihat langsung",
   },
   {
     num: "03",
@@ -159,6 +160,7 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+                {/* <p>{project.caption}</p> */}
               </div>
             </div>
           </div>

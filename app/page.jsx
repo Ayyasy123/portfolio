@@ -28,8 +28,10 @@ const Home = () => {
               <span className="text-accent">Syamil Taqiyuddin Ayyasy</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at creating modern website and I am proficient in various
-              languages and technologies.
+              Bachelor of Informatics with experience in Web Programming and
+              Data Analytics. Possesses a strong understanding of web
+              development and database management. I am also proficient in
+              various languages and technologies.
             </p>
             {/* btn and social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

@@ -9,23 +9,23 @@ const services = [
     num: "01",
     title: "Web development",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptatum assumenda minima.",
+      "Pengembangan situs web khususnya di bagian Backend menggunakan framework Laravel dan bahasa pemrograman seperti PHP dan JavaScript. Berpengalaman dalam integrasi layanan dengan RESTful API dan pengelolaan basis data menggunakan SQL.",
     href: "",
   },
   {
     num: "02",
     title: "Data Analytics",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptatum assumenda minima.",
+      "Analisis data menggunakan SQL untuk ekstraksi data dan Python untuk analisis lanjutan. Terampil merancang dashboard interaktif dengan Looker Studio untuk visualisasi data dan menghasilkan laporan detail untuk mendukung rekomendasi strategis.",
     href: "",
   },
-  {
-    num: "03",
-    title: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptatum assumenda minima.",
-    href: "",
-  },
+  // {
+  //   num: "03",
+  //   title: "UI/UX Design",
+  //   description:
+  //     "Desain antarmuka pengguna (UI) dan pengalaman pengguna (UX) yang fokus pada pengembangan fitur front-end menggunakan framework seperti Chakra UI, serta peningkatan performa dan keamanan sistem.",
+  //   href: "",
+  // },
 ];
 
 const Services = () => {

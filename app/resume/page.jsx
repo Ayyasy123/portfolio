@@ -19,16 +19,27 @@ import {
   FaReact,
   FaNodeJs,
   FaFigma,
+  FaPython,
+  FaLaravel,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiMysql,
+  SiPostgresql,
+  SiLooker,
+  SiPowerbi,
+  SiPostman,
+  SiOracle,
+} from "react-icons/si";
 
 // about data
 const about = [
   {
     title: "Web development",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptatum assumenda minima.",
+      "Developing websites with a focus on the backend using the Laravel framework and programming languages such as PHP and JavaScript. Experienced in integrating services with RESTful APIs and managing databases using SQL.",
     info: [
       {
         fieldName: "Name",
@@ -68,7 +79,7 @@ const experience = [
     icon: "/assets/resume/badge.svg",
     title: "My Experience",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa vero repudiandae placeat iusto voluptas nesciunt.",
+      "Experience in web development and data analytics with skills in various programming languages and data analysis tools.",
     items: [
       {
         company: "Rakamin x Kimia Farma",
@@ -90,21 +101,6 @@ const experience = [
         position: "Machine Learning",
         duration: "January 2023 - Desember 2023",
       },
-      {
-        company: "Central AI",
-        position: "Machine Learning",
-        duration: "January 2023 - Desember 2023",
-      },
-      {
-        company: "Central AI",
-        position: "Machine Learning",
-        duration: "January 2023 - Desember 2023",
-      },
-      {
-        company: "Central AI",
-        position: "Machine Learning",
-        duration: "January 2023 - Desember 2023",
-      },
     ],
   },
 ];
@@ -115,7 +111,7 @@ const education = [
     icon: "/assets/resume/cap.svg",
     title: "My Education",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa vero repudiandae placeat iusto voluptas nesciunt.",
+      "Educational background in Informatics Engineering and various certifications in web development and data analytics.",
     items: [
       {
         institution: "Udemy",
@@ -124,12 +120,17 @@ const education = [
       },
       {
         institution: "Datacamp",
-        degree: "The Complete 2024 Web Development Bootcamp",
+        degree: "SQL Associate Certification",
         duration: "2024",
       },
       {
         institution: "Universitas Pembangunan Nasional Veteran Jakarta",
-        degree: "The Complete 2024 Web Development Bootcamp",
+        degree: "Teknik Informatika",
+        duration: "2019 - 2023",
+      },
+      {
+        institution: "Dicoding",
+        degree: "Machine Learning dan Frontend",
         duration: "2019 - 2023",
       },
     ],
@@ -141,7 +142,7 @@ const skills = [
   {
     title: "My Skills",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa vero repudiandae placeat iusto voluptas nesciunt.",
+      "Skills in web development, data analysis, and data visualization using various programming languages and tools.",
     skillList: [
       {
         icon: <FaHtml5 />,
@@ -163,13 +164,45 @@ const skills = [
         icon: <FaNodeJs />,
         name: "node.js",
       },
+      // {
+      //   icon: <SiNextdotjs />,
+      //   name: "next.js",
+      // },
       {
-        icon: <SiNextdotjs />,
-        name: "next.js",
+        icon: <FaLaravel />,
+        name: "laravel",
+      },
+      // {
+      //   icon: <SiTailwindcss />,
+      //   name: "tailwind.css",
+      // },
+      {
+        icon: <SiPostman />,
+        name: "postman",
       },
       {
-        icon: <SiTailwindcss />,
-        name: "tailwind.css",
+        icon: <FaPython />,
+        name: "python",
+      },
+      {
+        icon: <SiMysql />,
+        name: "mySQL",
+      },
+      {
+        icon: <SiPostgresql />,
+        name: "postgresql",
+      },
+      {
+        icon: <SiOracle />,
+        name: "oracle",
+      },
+      {
+        icon: <SiLooker />,
+        name: "looker studio",
+      },
+      {
+        icon: <SiPowerbi />,
+        name: "power BI",
       },
       {
         icon: <FaFigma />,
@@ -306,7 +339,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about[0].description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px]">
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto">
                   {about[0].info.map((item, index) => {
                     return (
                       <li
