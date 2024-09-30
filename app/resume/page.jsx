@@ -50,7 +50,7 @@ const about = [
         fieldValue: "(+62) 851 5777 6533",
       },
       {
-        fieldName: "education",
+        fieldName: "Experience",
         fieldValue: "1+ Years",
       },
       {
